@@ -2,13 +2,15 @@
 {% block content %}
 <main>
   <div class="coluna_um">
-    <p>Descubra sua</p>
-    <p>Proxima leitura!</p>
-    <p>Utilizar o <span>Book Search</span> como sua principal plataforma de pesquisa de livros oferece resultados rápidos e precisos, otimizando a experiência e satisfação do usuário.</p>
-    {% include "/button/button.html" %}
+    <p class="coluna_um_p"><span class="coluna_um_p_span">Descubra</span> sua</p>
+    <p class="coluna_um_p">Proxima leitura!</p>
+    <p class="coluna_um_p_desc">Utilizar o Book <span class="coluna_um_p_desc_span">Search</span> como sua principal plataforma de pesquisa de livros oferece resultados rápidos e precisos, otimizando a experiência e satisfação do usuário.</p>
+    <div class="button_main">
+       {% include "/button/button.html" %}
+    </div>
   </div>
   <div class="coluna_dois">
-    <p>World</p>
+    <img src="{{ url_for('static', filename='images/image_main.png') }}">
   </div>
 </main>
 {% endblock %}

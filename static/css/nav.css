@@ -16,7 +16,8 @@ nav > div {
     align-items: center;
     width: 20%;
     height: 100%;
-    background: #E8E7D5
+    background: #E8E7D5;
+    padding-left: 20px
 }
 div > p {
     color: #0A1E33;
@@ -25,7 +26,7 @@ div > p {
     width: 100%
     text-align: center
 }
-div > p > span {
+div > p > .nav_div_book_search {
     color: #455A64;
     font-weight: 800;
     background: #E8E7D5;

@@ -1,13 +1,17 @@
 button {
     cursor: pointer;
-    width: 28%;
-    height: 17%;
+    width: 35%;
+    height: 45%;
     font-size: 23px;
     font-weight: 600;
     border: none;
-    background-color: #E6C32F
+    background-color: #E6C32F;
+    transition: background-color 0.5s ease-in-out;
+}
+button:hover {
+    background-color: #D3B32C;
 }
 .button_p {
     color: white;
-    background-color: #E6C32F;
+    background: transparent;
 }
