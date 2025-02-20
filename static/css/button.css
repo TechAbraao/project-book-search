@@ -1,0 +1,13 @@
+button {
+    cursor: pointer;
+    width: 28%;
+    height: 17%;
+    font-size: 23px;
+    font-weight: 600;
+    border: none;
+    background-color: #E6C32F
+}
+.button_p {
+    color: white;
+    background-color: #E6C32F;
+}

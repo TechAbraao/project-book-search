@@ -10,7 +10,7 @@ nav > div {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 35px;
+    font-size: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,8 @@ div > p {
     color: #0A1E33;
     font-weight: 200;
     background: #E8E7D5;
+    width: 100%
+    text-align: center
 }
 div > p > span {
     color: #455A64;

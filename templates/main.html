@@ -1,5 +1,14 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
 {% block content %}
 <main>
-  <p>MAIN</p>
+  <div class="coluna_um">
+    <p>Descubra sua</p>
+    <p>Proxima leitura!</p>
+    <p>Utilizar o <span>Book Search</span> como sua principal plataforma de pesquisa de livros oferece resultados rápidos e precisos, otimizando a experiência e satisfação do usuário.</p>
+    {% include "/button/button.html" %}
+  </div>
+  <div class="coluna_dois">
+    <p>World</p>
+  </div>
 </main>
 {% endblock %}
