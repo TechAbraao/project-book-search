@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.template_escolher_genero {
+    font-family: "Plus Jakarta Sans", serif;
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 50%;
+}
+.template_escolher_genero_div_um {
+    background-color: transparent;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.template_escolher_genero_div_um > h1 {
+    background-color: transparent;
+    font-size: 40px;
+    color: #0A1E33;
+}
+.template_escolher_genero_div_dois {
+    background-color: red;
+    height: 100%
+}
+.template_escolher_genero_div_dois > p {
+    background-color: transparent;
+}
+.template_escolher_genero_div_dois > .template_escolher_genero_div_dois_botoes {
+    background-color: purple;
+    height: 140px;
+}

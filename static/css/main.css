@@ -1,61 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 main {
     width: 100%;
-    height: 65%;
+    height: 60%;
     display: flex;
     font-family: "Plus Jakarta Sans", serif;
-    font-optical-sizing: auto;
 }
-.coluna_um {
+main > div {
     background-color: #E8E7D5;
     width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column
 }
-.coluna_dois {
+main > #main_second_column {
     background-color: #E8E7D5;
     width: 50%;
-}
-.coluna_um_p {
-    font-size: 80px;
-    font-weight: 700;
-    color: #0A1E33;
-    width: 70%;
-    padding-left: 100px;
-}
-.coluna_um_p_desc {
-    color: #455A64;
-    font-weight: 400;
-    background-color: transparent;
-    width: 70%;
-    padding-left: 100px;
-    height: 25%;
-    padding-top: 15px;
-}
-.button_main {
-    background: transparent;
-    width: 80%;
-    height: 180px;
-    padding-left: 100px;
-    padding-top: 10px;
-}
-.coluna_um_p_span {
-    background: red;
-    background-color: #E6C32F;
-}
-.coluna_um_p_desc_span {
-    background: transparent;
-    color: #E6C32F;
-    font-size: 22px;
-}
-.coluna_dois {
     display: flex;
     align-items: center;
     justify-content: center;
     background: #E8E7D5;
 }
-img {
+main > div > p {
+    font-size: 80px;
+    font-weight: 700;
+    color: #0A1E33;
+    width: 70%;
+    padding-left: 101px;
+    background-color: transparent;
+}
+main > div > #main_first_column_description {
+    color: #455A64;
+    font-weight: 400;
+    background-color: transparent;
+    width: 70%;
+    padding-left: 101px;
+    height: 25%;
+    padding-top: 15px;
+    font-size: 18px;
+}
+main > div > div {
+    background: transparent;
+    width: 750px;
+    height: 150px;
+    padding-left: 101px;
+}
+main > #main_second_column > img {
     background-color: transparent;
     height: 100%
+}
+main > div > p > #main_contrast_word {
+    background-color: #E6C32F;
+}
+@media (max-width: 1735px) {
+    main > div > p {
+        width: 100%
+    }
+}
+@media (max-width: 1450px) {
+    main > #main_second_column > img {
+        width: 80%;
+        height: 90%
+    }
+    main > div > p {
+        font-size: 65px;
+    }
+}
+@media (max-width: 1250px) {
+    main > div > #main_first_column_description {
+        width: 80%;
+        font-size: 15px;
+    }
+    main > div > p {
+        font-size: 55px;
+    }
+     main > #main_second_column > img {
+        width: 75%;
+        height: 80%
+    }
+}
+@media (max-width: 1050px) {
+    main > #main_second_column {
+        display: none;
+    }
+    main > div {
+        width: 100%
+    }
+    main > div > p {
+        width: 50%
+    }
+    main > div > #main_first_column_description {
+        width: 50%;
+    }
+    main > div > div {
+        width: 650px;
+    }
+}
+@media (max-width: 850px) {
+    main > div > div {
+        width: 550px;
+    }
+    main > div > #main_first_column_description {
+        font-size: 13px;
+    }
+    main > div > p {
+        font-size: 45px;
+    }
+}
+@media (max-width: 700px) {
+    main > div > div {
+        width: 400px;
+    }
+    main {
+        height: 50%
+    }
+    main > div > p {
+        width: 70%
+    }
+    main > div > #main_first_column_description {
+        width: 60%
+    }
+    main > div > p {
+        padding-left: 55px;
+    }
+    main > div > #main_first_column_description {
+        padding-left: 55px;
+    }
+    main > div > div {
+        padding-left: 50px;
+    }
+}
+@media (max-width: 500px) {
+    main > div > p {
+        font-size: 40px;
+    }
+    main > div > #main_first_column_description {
+        width: 70%;
+    }
+}
+@media (max-width: 470px) {
+    main > div > div {
+        width: 20px;
+    }
+}
+@media (max-width: 440px) {
+    main > div > p {
+        font-size: 32px;
+        padding-left: 25px;
+    }
+    main > div > #main_first_column_description {
+        font-size: 12px;
+        padding-left: 25px;
+    }
+    main > div > div {
+        padding-left: 25px;
+    }
+}
+@media (max-width: 350px) {
+    main > div > p {
+        width: 80%
+    }
 }

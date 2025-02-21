@@ -1,8 +1,7 @@
 button {
     cursor: pointer;
-    width: 35%;
-    height: 45%;
-    font-size: 23px;
+    width: 270px;
+    height: 40%;
     font-weight: 600;
     border: none;
     background-color: #E6C32F;
@@ -11,7 +10,22 @@ button {
 button:hover {
     background-color: #D3B32C;
 }
-.button_p {
+button > p {
     color: white;
     background: transparent;
+    font-size: 23px;
+}
+@media (max-width: 850px){
+    button {
+        width: 240px;
+    }
+}
+
+@media (max-width: 550px){
+    button {
+        width: 200px;
+    }
+    button > p {
+        font-size: 19px;
+    }
 }
