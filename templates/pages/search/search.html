@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/search.css')}}">
+
+{% block content %}
+<div id="component_search">
+    <div>
+        <h1>Qual gênero deseja?</h1>
+    </div>
+    <div>
+        <div>
+            {% set botoes = ["Comédia", "Drama", "Romance", "Suspense", "Fantasia", "Auto-ajuda"] %}
+            {% for botao in botoes %}
+                <button>{{ botao }}</button>
+            {% endfor %}
+        </div>
+        <div id="search_field_input">
+            <p>Sobre o que você gostaria de receber uma recomendação de livro?</p>
+            <input placeholder="Buscar no Book Search">
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -7,6 +7,11 @@ button {
     background-color: #E6C32F;
     transition: background-color 0.5s ease-in-out;
 }
+.fa-arrow-right {
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+}
 button:hover {
     background-color: #D3B32C;
 }

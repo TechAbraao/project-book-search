@@ -2,15 +2,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{{url_for('static', filename='css/template.css')}}">
 <link rel="icon" href="{{ url_for('static', filename='icons/logo_minimalista.png') }}" type="image/x-icon">
-<meta http-equiv="refresh" content="1">
-<html lang="en">
+<!-- Metatag para atualizar o Browser a cada 1s -->
+<!-- <meta http-equiv="refresh" content="1"> -->
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8">
     <title>{{ titulo }}</title>
   </head>
   <body>
-    {% include "nav/nav.html" %}
-    {% include "main/main.html" %}
+    {% include "pages/nav/nav.html" %}
+    {% include "pages/main/main.html" %}
+    {% include "pages/search/search.html" %}
   </body>
 </html>
 

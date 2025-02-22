@@ -8,7 +8,7 @@ def root():
 
 @app.route("/home")
 def home():
-    return render_template("template/template.html", titulo="Book Search")
+    return render_template("pages/template/template.html", titulo="Book Search")
 
 if __name__ == "__main__":
     app.run(debug=True)
