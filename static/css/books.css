@@ -16,10 +16,95 @@
     color: #0A1E33;
     background-color: #F9F9F9
 }
+#page_books_card {
+    -webkit-box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
+    -moz-box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
+    box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
+}
 #page_books > div {
     background-color: #E8E7D5;
     width: 100%;
     height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page_books > div > #page_books_card {
+    background-color: white;
+    width: 27%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page_books_card > img {
+    background-color: #EFEFEF;
+    width: 33%;
+    height: 80%;
+}
+#page_books_card > div {
+    width: 55%;
+    height: 80%;
+}
+#component_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#component_card > h1 {
+    font-size: 16px;
+    font-color: #E6C32F;
+    background-color: transparent;
+    width: 97%;
+    height: 30px;
+}
+#component_card > p {
+    background-color: transparent;
+    width: 97%;
+    font-size: 10px;
+
+    color: #455A64;
+}
+#component_card > #component_card_gender_book {
+    background-color: #E6C32F;
+    font-size: 12px;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+#component_card > div {
+    background-color: transparent;
+    width: 80%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+#component_card > div > #component_card_synopsis {
+    font-size: 12.5px;
+    background-color: transparent;
+    font-color: #0A1E33;
+    font-weight: bold;
+}
+#component_card > button {
+    width: 150px;
+    height: 40px;
+    border-style: solid;
+    border-color: #E6C32F;
+}
+#component_card > button > p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #E6C32F;
+    background-color: transparent;
+    text-align: center;
+    display: block;
+}
+#component_card > button:hover {
+        background-color: #E6C32F;
+}
+#component_card > button > p:hover {
+    color: white;
 }
 @media (max-width: 470px) {
     #page_books > p {
