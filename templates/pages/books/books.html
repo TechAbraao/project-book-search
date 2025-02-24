@@ -1,24 +1,12 @@
-<link rel="stylesheet" href="{{url_for('static', filename='css/books.css')}}">
+<link rel="stylesh eet" href="{{url_for('static', filename='css/books.css')}}">
+{% import "macros/card/card.html" as card %}
 {% block content %}
 <div id="page_books">
-        <p>Livros recomendados</p>
-        <div>
-                <div id="page_books_card">
-                        <img>
-                        <div id="component_card">
-                                <h1>JavaScript</h1>
-                                <p>Robert C. Martin</p>
-                                <p id="component_card_gender_book">Computer Engineer</p>
-                                <div>
-                                        <p id="component_card_synopsis">
-                                                Sinopse: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper erat faucibus justo luctus gravida. In hac habitasse platea dictumst. Curabitur at massa vel nulla pulvinar dignissim.
-                                        </p>
-                                </div>
-                                <button>
-                                        <p>Ver mais</p>
-                                </button>
-                        </div>
-                </div>
-        </div>
+    <p>Livros recomendados</p>
+    <div>
+        {% for data in data_card %}
+                {{ card.card(data.title, data.author, data.gender, data.synopsis) }}
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
