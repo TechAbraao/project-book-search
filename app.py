@@ -1,14 +1,9 @@
-from flask import Flask, render_template, redirect, url_for
-
+from flask import Flask
 app = Flask(__name__)
 
-@app.route("/")
-def root():
-    return redirect(url_for('home'))
+from routes.routes import home
 
-@app.route("/home")
-def home():
-    return render_template("pages/template/template.html", titulo="Book Search")
+app.register_blueprint(home, url_prefix="/home")
 
 if __name__ == "__main__":
     app.run(debug=True)
