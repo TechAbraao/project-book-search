@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+#new_book_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #E8E7D5;
+    font-family: "Plus Jakarta Sans", serif;
+}
+#new_book_section > h1 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: #0A1E33;
+    font-weight: 700;
+}
+#new_book_section > div {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}

@@ -1,0 +1,65 @@
+#macro_large_card {
+    background-color: #FFFFFF;
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      -webkit-box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
+    -moz-box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
+    box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
+    margin-bottom: 30px;
+}
+#macro_large_card > img {
+    background-color: #EFEFEF;
+    width: 500px;
+    height: 90%;
+}
+#macro_large_card > div {
+    background-color: transparent;
+    width: 450px;
+    height: 90%;
+
+}
+#macro_large_card > div > h1 {
+    font-size: 30px;
+    width: 99%;
+    height: 14%;
+    padding-left: 15px;
+    background-color: transparent;
+    color: #E6C32F;
+    font-weight: 700
+}
+#macro_large_card_author {
+    background-color: transparent;
+    width: 90%;
+    padding-left: 15px;
+    height: 10%;
+    font-size: 20px;
+    font-weight: 200;
+    color: #455A64
+}
+#macro_large_card_gender {
+    background-color: transparent;
+    width: 90%;
+    padding-left: 15px;
+    height: 5%;
+    font-size: 25px;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+#macro_large_card_gender > span {
+    background-color: #E6C32F;
+    width: 200px;
+}
+#macro_large_card > div > div {
+    width: 96.2%;
+    height: 50%;
+    background-color: transparent;
+    padding-left: 15px;
+}
+#macro_large_card > div > div > p {
+    font-size: 14px;
+    text-align: center;
+    color: #0A1E33;
+}

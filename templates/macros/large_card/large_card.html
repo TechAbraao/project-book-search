@@ -1,0 +1,14 @@
+{% macro large_card(image = "default", title = "default", author = "default", gender = "default", synopsis = "default") %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/large_card.css') }}">
+<div id="macro_large_card">
+    <img src="{{ image }}">
+    <div>
+        <h1>{{title}}</h1>
+        <p id="macro_large_card_author">{{author[0]}}, {{author[1]}}, {{author[2]}}, {{author[3]}}</p>
+        <p id="macro_large_card_gender"><span>{{gender[0]}}</span></p>
+        <div>
+            <p>{{synopsis}}</p>
+        </div>
+    </div>
+</div>
+{% endmacro %}

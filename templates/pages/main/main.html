@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+<script>
+    document
+</script>
 {% import "macros/button/button.html" as button %}
 {% block content %}
 <main>
@@ -7,7 +10,8 @@
     <p>Proxima leitura!</p>
     <p id="main_first_column_description">Utilizar o Book Search como sua principal plataforma de pesquisa de livros oferece resultados rápidos e precisos, otimizando a experiência e satisfação do usuário.</p>
     <div>
-       {{ button.button("Pesquisar") }}
+       {{ button.button("Pesquisar", "fa-solid fa-arrow-right") }}
+       <a href="{{ url_for('new_book.new_book_page') }}">{{ button.button("Nova leitura") }}</a>
     </div>
   </div>
   <div id="main_second_column">
