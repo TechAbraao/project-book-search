@@ -1,50 +1,41 @@
 from flask import Blueprint, render_template, abort
 from jinja2 import TemplateNotFound
+from dotenv import load_dotenv
+import os
+from .utils.api_google_books import ApiGoogleBooks
+
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
+api_google_books = ApiGoogleBooks(API_KEY)
 
 home = Blueprint('home', __name__)
-
-data_card = [
-    {
-        "title": "Python para Iniciantes",
-        "author": "Abraão Santos",
-        "gender": "Computação",
-        "synopsis": "Este livro é um guia completo para quem quer aprender Python desde o início, com explicações claras e exercícios práticos."
-    },
-    {
-        "title": "Algoritmos em Python",
-        "author": "Cláudia Oliveira",
-        "gender": "Computação",
-        "synopsis": "Aprenda os principais algoritmos de programação e como implementá-los eficientemente em Python."
-    },
-    {
-        "title": "Estruturas de Dados",
-        "author": "Carlos Silva",
-        "gender": "Computação",
-        "synopsis": "Um livro focado em ensinar as principais estruturas de dados e como usá-las para otimizar o desempenho dos programas."
-    },
-    {
-        "title": "Inteligência Artificial com Python",
-        "author": "Ricardo Souza",
-        "gender": "Computação",
-        "synopsis": "Explore os fundamentos da inteligência artificial, machine learning e deep learning, usando a linguagem Python."
-    },
-    {
-        "title": "Desenvolvimento Web com Flask",
-        "author": "Larissa Pereira",
-        "gender": "Desenvolvimento Web",
-        "synopsis": "Este livro é uma introdução ao desenvolvimento de aplicações web com o framework Flask, utilizando Python para backend."
-    },
-    {
-        "title": "Ciência de Dados com Python",
-        "author": "Eduardo Mendes",
-        "gender": "Ciência de Dados",
-        "synopsis": "Descubra como usar Python para análise de dados, visualização e aprendizado de máquinas para explorar grandes volumes de informações."
-    }
-]
 
 @home.route("/")
 def home_page():
     try:
-        return render_template("pages/template/template.html", titulo="Book Search", data_card=data_card)
+        list_one = api_google_books.catchIdBook("Comédia")
+        list_two = api_google_books.catchIdBook("Drama")
+        list_three = api_google_books.catchIdBook("Romance")
+        list_four = api_google_books.catchIdBook("Suspense")
+        list_five = api_google_books.catchIdBook("Fantasia")
+
+        list_all = list_one + list_two + list_three + list_four + list_five
+
+        id1 = api_google_books.random_id(list_all)
+        id2 = api_google_books.random_id(list_all)
+        id3 = api_google_books.random_id(list_all)
+        id4 = api_google_books.random_id(list_all)
+        id5 = api_google_books.random_id(list_all)
+        id6 = api_google_books.random_id(list_all)
+
+        data1 = api_google_books.idForVolume(id1)
+        data2 = api_google_books.idForVolume(id2)
+        data3 = api_google_books.idForVolume(id3)
+        data4 = api_google_books.idForVolume(id4)
+        data5 = api_google_books.idForVolume(id5)
+        data6 = api_google_books.idForVolume(id6)
+
+        return render_template("pages/template/template.html", titulo="Book Search", data=[data1, data2, data3, data4, data5, data6])
+
     except TemplateNotFound:
         abort(404)

@@ -48,7 +48,7 @@
 }
 #component_search > div > #search_field_input {
     height: 220px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: start;

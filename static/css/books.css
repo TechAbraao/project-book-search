@@ -53,7 +53,7 @@
     width: 300px;
 }
 #component_card > h1 {
-    font-size: 16px;
+    font-size: 12px;
     font-color: #E6C32F;
     background-color: transparent;
     width: 97%;
@@ -106,7 +106,7 @@
 #component_card > button > p:hover {
     color: white;
 }
-@media (max-width: 1320px) {
+@media (max-width: 1600px) {
     #page_books > div {
     background-color: #E8E7D5;
     height: 1000px;

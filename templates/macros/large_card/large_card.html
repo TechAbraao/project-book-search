@@ -3,11 +3,35 @@
 <div id="macro_large_card">
     <img src="{{ image }}">
     <div>
-        <h1>{{title}}</h1>
-        <p id="macro_large_card_author">{{author[0]}}, {{author[1]}}, {{author[2]}}, {{author[3]}}</p>
-        <p id="macro_large_card_gender"><span>{{gender[0]}}</span></p>
+        <h1>{% if title %}
+                {{title}}
+            {% else %}
+                Título não encontrado
+            {% endif %}
+        </h1>
+        <p id="macro_large_card_author">
+            {% if author %}
+                {{ author[0]}}
+            {% else %}
+                Autor não encontrado
+            {% endif %}
+        </p>
+        <p id="macro_large_card_gender">
+            <span>
+            {% if gender %}
+                {{ gender[0]}}
+            {% else %}
+                Gênero não encontrado
+            {% endif %}
+        </span></p>
         <div>
-            <p>{{synopsis}}</p>
+            <p>
+                {% if s %}
+                    {{ synopsis }}
+                {% else %}
+                    Sinopse não encontrada
+                {% endif %}
+            </p>
         </div>
     </div>
 </div>

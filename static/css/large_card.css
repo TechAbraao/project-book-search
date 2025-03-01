@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-      -webkit-box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
     -moz-box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
     box-shadow: 10px 7px 38px -11px rgba(0,0,0,0.43);
     margin-bottom: 30px;
@@ -22,7 +22,7 @@
 
 }
 #macro_large_card > div > h1 {
-    font-size: 30px;
+    font-size: 20px;
     width: 99%;
     height: 14%;
     padding-left: 15px;
@@ -44,7 +44,7 @@
     width: 90%;
     padding-left: 15px;
     height: 5%;
-    font-size: 25px;
+    font-size: 20px;
     background-color: transparent;
     margin-bottom: 15px;
 }
@@ -57,9 +57,10 @@
     height: 50%;
     background-color: transparent;
     padding-left: 15px;
+    margin-top: 35px;
 }
 #macro_large_card > div > div > p {
-    font-size: 14px;
-    text-align: center;
+    font-size: 13px;
+    text-align: left;
     color: #0A1E33;
 }

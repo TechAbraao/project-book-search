@@ -1,13 +1,14 @@
-{% macro card(title, author, gender, synopsis) %}
-<link rel="stylesheet" href="{{url_for('static', filename='css/books.css')}}">
+{% macro card(image = "default", title = "default", author = "default", gender = "default", synopsis = "default") %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/books.css') }}">
 <div id="page_books_card">
-    <img>
+    <img src="{{ image if image != 'default' else '/static/img/default_image.jpg' }}">
     <div id="component_card">
         <h1>{{ title }}</h1>
-        <p style="margin-top: 10px;">{{ author }}</p>
-        <p id="component_card_gender_book">{{ gender }}</p>
+        <p style="margin-top: 10px;">{{ author[0] }}</p>
+        <p id="component_card_gender_book">{{ gender[0] }}</p>
         <div>
-            <p id="component_card_synopsis"><strong>Sinopse:</strong> {{ synopsis }}</p>
+            <p id="component_card_synopsis"><strong>Sinopse:</strong> {{ synopsis[:230]}}</p>
+
         </div>
         <button>
             <p>Ver mais</p>
