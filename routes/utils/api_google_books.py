@@ -4,7 +4,7 @@ import requests
 class ApiGoogleBooks:
     def __init__(self, key):
         self.key = key
-
+        self.lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     def catchBook(self, query):
         URL = f'https://www.googleapis.com/books/v1/volumes?q={query}&key={self.key}'
         response = requests.get(URL)
@@ -47,10 +47,10 @@ class ApiGoogleBooks:
         if res.status_code == 200:
             res = res.json()
             volume_info = res.get("volumeInfo", {})
-            title = volume_info.get("title")
-            description = volume_info.get("description") or "Descrição não encontrada"
-            authors = volume_info.get("authors", [])
-            categories = volume_info.get("categories", [])
+            title = volume_info.get("title") or self.lorem_ipsum
+            description = volume_info.get("description") or self.lorem_ipsum
+            authors = volume_info.get("authors", []) or self.lorem_ipsum
+            categories = volume_info.get("categories", []) or self.lorem_ipsum
             image = volume_info.get("imageLinks", {}).get("thumbnail", None)
             data = {
                 "title": title,

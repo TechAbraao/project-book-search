@@ -35,7 +35,7 @@ def home_page():
         data5 = api_google_books.idForVolume(id5)
         data6 = api_google_books.idForVolume(id6)
 
-        return render_template("pages/template/template.html", titulo="Book Search", data=[data1, data2, data3, data4, data5, data6])
+        return render_template("pages/template/template.html", titulo="Book Search", data = [data1, data2, data3, data4, data5, data6])
 
     except TemplateNotFound:
         abort(404)

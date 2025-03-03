@@ -3,12 +3,11 @@
 <div id="page_books_card">
     <img src="{{ image if image != 'default' else '/static/img/default_image.jpg' }}">
     <div id="component_card">
-        <h1>{{ title }}</h1>
-        <p style="margin-top: 10px;">{{ author[0] }}</p>
-        <p id="component_card_gender_book">{{ gender[0] }}</p>
+        <h1>{{ title | truncate(70) }}</h1>
+        <p style="margin-top: 10px;">{{ author[0] | truncate(20)}}</p>
+        <p id="component_card_gender_book">{{ gender[0] | truncate(45) }}</p>
         <div>
-            <p id="component_card_synopsis"><strong>Sinopse:</strong> {{ synopsis[:230]}}</p>
-
+            <p id="component_card_synopsis"><strong>Sinopse:</strong> {{ synopsis | truncate(180)}}</p>
         </div>
         <button>
             <p>Ver mais</p>

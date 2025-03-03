@@ -65,6 +65,17 @@ main > div > p > #main_contrast_word {
         font-size: 65px;
     }
 }
+@media (max-width: 1300px) {
+    main {
+        height: 80%;
+    }
+    main > div > div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: 200px;
+    }
+}
 @media (max-width: 1250px) {
     main > div > #main_first_column_description {
         width: 80%;
