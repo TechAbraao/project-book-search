@@ -10,7 +10,7 @@
             <p id="component_card_synopsis"><strong>Sinopse:</strong> {{ synopsis | truncate(180)}}</p>
         </div>
         <button>
-            <p>Ver mais</p>
+            <a href="{{ url_for('new_book.new_book_page')}}">Ver mais</a>
         </button>
     </div>
 </div>

@@ -3,6 +3,7 @@
 #page_books {
     width: 100%;
     font-family: "Plus Jakarta Sans", serif;
+    text-decoration: none;
 }
 #page_books > p {
     width: 100%;
@@ -91,14 +92,16 @@
     border-style: solid;
     border-color: #E6C32F;
     background-color: transparent;
+    text-decoration: none;
 }
-#component_card > button > p {
+#component_card > button > a {
     font-size: 16px;
     font-weight: bold;
     color: #E6C32F;
     background-color: transparent;
     text-align: center;
     display: block;
+    text-decoration: none;
 }
 #component_card > button:hover {
         background-color: #E6C32F;
