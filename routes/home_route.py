@@ -13,13 +13,9 @@ home = Blueprint('home', __name__)
 @home.route("/")
 def home_page():
     try:
-        list_one = api_google_books.catchIdBook("Comédia")
-        list_two = api_google_books.catchIdBook("Drama")
-        list_three = api_google_books.catchIdBook("Romance")
-        list_four = api_google_books.catchIdBook("Suspense")
-        list_five = api_google_books.catchIdBook("Fantasia")
-
-        list_all = list_one + list_two + list_three + list_four + list_five
+        list_one = api_google_books.catchIdBook("Fantasia")
+        list_two = api_google_books.catchIdBook("Humor")
+        list_all = list_one + list_two
 
         id1 = api_google_books.random_id(list_all)
         id2 = api_google_books.random_id(list_all)
@@ -35,7 +31,9 @@ def home_page():
         data5 = api_google_books.idForVolume(id5)
         data6 = api_google_books.idForVolume(id6)
 
-        return render_template("pages/template/template.html", titulo="Book Search", data = [data1, data2, data3, data4, data5, data6])
+        data = [data1, data2, data3, data4, data5, data6]
+
+        return render_template("pages/template/template.html", titulo="Book Search", data = data)
 
     except TemplateNotFound:
         abort(404)

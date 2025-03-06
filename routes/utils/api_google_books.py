@@ -53,6 +53,31 @@ class ApiGoogleBooks:
             categories = volume_info.get("categories", []) or self.lorem_ipsum
             image = volume_info.get("imageLinks", {}).get("thumbnail", None)
             data = {
+                "id": volume_id,
+                "title": title,
+                "description": description,
+                "authors": authors,
+                "categories": categories,
+                "image": image,
+            }
+            return data
+        else:
+            print(f"Erro na requisição. Código de status: {res.status_code}")
+            return None
+
+
+    def sixIdForVolume(self, volume_id):
+        URL = f"https://www.googleapis.com/books/v1/volumes/{volume_id}?key={self.key}"
+        res = requests.get(URL)
+        if res.status_code == 200:
+            res = res.json()
+            volume_info = res.get("volumeInfo", {})
+            title = volume_info.get("title") or self.lorem_ipsum
+            description = volume_info.get("description") or self.lorem_ipsum
+            authors = volume_info.get("authors", []) or self.lorem_ipsum
+            categories = volume_info.get("categories", []) or self.lorem_ipsum
+            image = volume_info.get("imageLinks", {}).get("thumbnail", None)
+            data = {
                 "title": title,
                 "description": description,
                 "authors": authors,
