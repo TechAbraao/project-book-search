@@ -7,4 +7,4 @@ app.register_blueprint(home, url_prefix="/home")
 app.register_blueprint(new_book, url_prefix="/new-book")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=3030, debug=True)

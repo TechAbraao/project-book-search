@@ -13,9 +13,8 @@ home = Blueprint('home', __name__)
 @home.route("/")
 def home_page():
     try:
-        list_one = api_google_books.catchIdBook("Fantasia")
-        list_two = api_google_books.catchIdBook("Humor")
-        list_all = list_one + list_two
+        list_one = api_google_books.catchIdBook("Humor")
+        list_all = list_one
 
         id1 = api_google_books.random_id(list_all)
         id2 = api_google_books.random_id(list_all)

@@ -1,7 +1,6 @@
 from flask import Blueprint, render_template
 from dotenv import load_dotenv
 import os
-from faker import Faker
 from .utils.api_google_books import ApiGoogleBooks
 
 load_dotenv()

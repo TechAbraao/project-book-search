@@ -26,11 +26,7 @@
         </span></p>
         <div>
             <p>
-                {% if s %}
-                    {{ synopsis }}
-                {% else %}
-                    Sinopse não encontrada
-                {% endif %}
+                {{ synopsis | truncate(1300, True, " Fim!") }}
             </p>
         </div>
     </div>
