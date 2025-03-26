@@ -21,8 +21,8 @@
 ### 🔧 Pre-requisites
 
 - An IDE of your choice
-- Python on your operating system
-- Google Books API Secret Key
+- Python installed on your system (recommended version: 3.8+)
+- Google Books API Secret Key ([How to get one?](https://developers.google.com/books/docs/v1/using))
 
 ### 1️⃣ Clone this repository
 
@@ -68,12 +68,17 @@ GOOGLE_BOOK_API_KEY=<your_google_books_api_key>
 ```
 
 ### 6️⃣ Run the application
-
+If you are on a Unix system:
 ```bash
+chmod +x run.sh
 ./run.sh
 ```
+Or by Flask:
+```bash
+flask run
+```
 
-### 8️⃣ Access in browser
+### 7️⃣ Access in browser
 
 ```bash
 http://<HOST>:<PORT>
