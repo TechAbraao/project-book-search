@@ -16,40 +16,54 @@ Under construction ...
 <h2>📌 Getting started</h2>
 <h3>Pre-requisites</h3>
 An IDE of your choice and Python on your operating system
-<h3>Clone this repository</h3>
+<h3>1. Clone this repository</h3>
 
 ```bash
 git clone https://github.com/TechAbraao/project-book-search.git
 ```
 
-<h3>Enter the project directory</h3>
+<h3>2. Enter the project directory</h3>
 
 ```bash
 cd ./project-book-search
 ```
 
-<h3>Create or activate the Virtual Environment [OPTIONAL] </h3>
+<h3>3. Create or activate the Virtual Environment [OPTIONAL] </h3>
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-<h3>Install all dependencies</h3>
+<h3>4. Install all dependencies</h3>
 
 ```bash
 pip install -r requirements.txt
 ```
 
-<h3>Execute the application with</h3>
+<h3>5. Install all dependencies</h3>
 
+```bash
+pip install -r requirements.txt
+```
+
+<h3>6. Configure ".env.example" correctly and change its name to ".env"</h3>
+```bash
+FLASK_APP=src/app
+HOST=<host>
+PORT=<port>
+GOOGLE_BOOK_API_KEY=<your_google_books_api_key>
+```
+
+
+<h3>7. Execute the application with</h3>
 
 ```bash
 flask run
 ```
 
-<h3>Finally, enter in</h3>
+<h3>8. Finally, enter in</h3>
 
 ```bash
-http://127.0.0.1:3030
+http://<HOST>:<PORT>
 ```
