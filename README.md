@@ -49,7 +49,8 @@ pip install -r requirements.txt
 
 <h3>6. Configure ".env.example" correctly and change its name to ".env"</h3>
 ```bash
-FLASK_APP=src/app
+FLASK_APP=src.app.app
+DEBUG=True
 HOST=<host>
 PORT=<port>
 GOOGLE_BOOK_API_KEY=<your_google_books_api_key>
