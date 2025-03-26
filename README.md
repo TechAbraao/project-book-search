@@ -61,16 +61,16 @@ Rename the `.env.example` file to `.env` and edit the environment variables acco
 
 ```bash
 FLASK_APP=src.app.app
+FLASK_RUN_HOST=<host>
+FLASK_RUN_PORT=<port>
 DEBUG=True
-HOST=<host>
-PORT=<port>
 GOOGLE_BOOK_API_KEY=<your_google_books_api_key>
 ```
 
 ### 6️⃣ Run the application
 
 ```bash
-flask run
+./run.sh
 ```
 
 ### 8️⃣ Access in browser

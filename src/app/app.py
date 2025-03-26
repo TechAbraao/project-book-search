@@ -10,4 +10,4 @@ app = create_app()
 if __name__ == "__main__":
     HOST = os.getenv("HOST", "127.0.0.1")
     PORT = int(os.getenv("PORT", 5000))
-    app.run(host=HOST, port=PORT, debug=True)  # Apenas roda o servidor aqui
+    app.run(host=HOST, port=PORT, debug=True)
