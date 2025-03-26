@@ -1,12 +1,6 @@
+from src.app.utils import api_google_books
 from flask import Blueprint, render_template
-from dotenv import load_dotenv
-import os
-from .utils.api_google_books import ApiGoogleBooks
 
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
-
-api_google_books = ApiGoogleBooks(API_KEY)
 
 new_book = Blueprint('new_book', __name__)
 
