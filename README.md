@@ -1,53 +1,64 @@
-<h1 align="center"> 📖 Book Search | Your favorite book is here! 📖</h1>
-<p align="center">
-Under construction ...
-</p>
-<h2>💡 Technologies</h2>
-<div>
-<img alt="Static Badge" src="https://img.shields.io/badge/Python-black?style=for-the-badge&logo=Python&logoSize=60"> 
-<img alt="Static Badge" src="https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=Flask&logoSize=60"> 
-<img alt="Static Badge" src="https://img.shields.io/badge/Jinja2-black?style=for-the-badge&logo=Jinja&logoColor=red&logoSize=60">
-<img alt="Static Badge" src="https://img.shields.io/badge/SQLAlchemy-black?style=for-the-badge&logo=SQLAlchemy&logoColor=red&logoSize=60">
-<img alt="Static Badge" src="https://img.shields.io/badge/CSS-black?style=for-the-badge&logo=CSS3&logoSize=60"> 
-<img alt="Static Badge" src="https://img.shields.io/badge/HTML-black?style=for-the-badge&logo=HTML5&logoSize=60"> 
-<img alt="Static Badge" src="https://img.shields.io/badge/Google Books API-black?style=for-the-badge&logo=googlecloud&logoSize=60">
-<img alt="Static Badge" src="https://img.shields.io/badge/SQLite-black?style=for-the-badge&logo=sqlite&logoSize=60">
+<h1 align="center"> 📖 Book Search | Your favorite book is here! 📖 </h1>
+<div align="center">
+<p>Under construction ...</p>
 </div>
-<h2>📌 Getting started</h2>
-<h3>Pre-requisites</h3>
-An IDE of your choice and Python on your operating system
-<h3>1. Clone this repository</h3>
+
+## 💡 Technologies
+
+<div align="center">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Python-black?style=for-the-badge&logo=Python&logoSize=60"> 
+  <img alt="Static Badge" src="https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=Flask&logoSize=60"> 
+  <img alt="Static Badge" src="https://img.shields.io/badge/Jinja2-black?style=for-the-badge&logo=Jinja&logoColor=red&logoSize=60">
+  <img alt="Static Badge" src="https://img.shields.io/badge/SQLAlchemy-black?style=for-the-badge&logo=SQLAlchemy&logoColor=red&logoSize=60">
+  <img alt="Static Badge" src="https://img.shields.io/badge/CSS-black?style=for-the-badge&logo=CSS3&logoSize=60"> 
+  <img alt="Static Badge" src="https://img.shields.io/badge/HTML-black?style=for-the-badge&logo=HTML5&logoSize=60"> 
+  <img alt="Static Badge" src="https://img.shields.io/badge/Google Books API-black?style=for-the-badge&logo=googlecloud&logoSize=60">
+  <img alt="Static Badge" src="https://img.shields.io/badge/SQLite-black?style=for-the-badge&logo=sqlite&logoSize=60">
+</div>
+
+## 📌 Getting Started
+
+### 🔧 Pre-requisites
+
+- An IDE of your choice
+- Python on your operating system
+- Google Books API Secret Key
+
+### 1️⃣ Clone this repository
 
 ```bash
 git clone https://github.com/TechAbraao/project-book-search.git
 ```
 
-<h3>2. Enter the project directory</h3>
+### 2️⃣ Enter the project directory
 
 ```bash
-cd ./project-book-search
+cd project-book-search
 ```
 
-<h3>3. Create or activate the Virtual Environment [OPTIONAL] </h3>
+### 3️⃣ Create or activate the Virtual Environment [OPTIONAL]
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+- **Linux/macOS:**
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+- **Windows:**
+  ```powershell
+  python -m venv venv
+  venv\Scripts\activate
+  ```
 
-<h3>4. Install all dependencies</h3>
+### 4️⃣ Install all dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-<h3>5. Install all dependencies</h3>
+### 5️⃣ Configure the `.env` file
 
-```bash
-pip install -r requirements.txt
-```
+Rename the `.env.example` file to `.env` and edit the environment variables accordingly:
 
-<h3>6. Configure ".env.example" correctly and change its name to ".env"</h3>
 ```bash
 FLASK_APP=src.app.app
 DEBUG=True
@@ -56,15 +67,15 @@ PORT=<port>
 GOOGLE_BOOK_API_KEY=<your_google_books_api_key>
 ```
 
-
-<h3>7. Execute the application with</h3>
+### 6️⃣ Run the application
 
 ```bash
 flask run
 ```
 
-<h3>8. Finally, enter in</h3>
+### 8️⃣ Access in browser
 
 ```bash
 http://<HOST>:<PORT>
 ```
+
