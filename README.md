@@ -1,4 +1,4 @@
-# 📖 Book Search | Your favorite book is here! 📖
+<h1 align="center"> 📖 Book Search | Your favorite book is here! 📖 </h1>
 <div align="center">
 <p>Under construction ...</p>
 </div>
