@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="{{ url_for('static', filename='css/new_book.css') }}">
 {% import "macros/button/button.html" as button %}
 {% import "macros/large_card/large_card.html" as large_card %}
@@ -12,7 +11,7 @@
         synopsis = data["description"],
         image = data["image"],
         ) }}
-        <a href="{{ url_for('home.home_page') }}">
+        <a href="{{ url_for('home.index') }}">
         {{ button.button("Voltar") }}
         </a>
     </div>

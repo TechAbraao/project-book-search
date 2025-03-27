@@ -1,6 +1,6 @@
 <h1 align="center"> 📖 Book Search | Your favorite book is here! 📖 </h1>
 <div align="center">
-<p>Under construction ...</p>
+  <img src="public/wallpaper.png" width="100%">
 </div>
 
 ## 💡 Technologies
@@ -81,6 +81,6 @@ flask run
 ### 7️⃣ Access in browser
 
 ```bash
-http://<HOST>:<PORT>
+http://<FLASK_RUN_HOST>:<FLASK_RUN_PORT>
 ```
 
