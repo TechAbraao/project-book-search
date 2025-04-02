@@ -30,6 +30,7 @@
     font-size: 18px;
     color: #E6C32F;
     font-weight: 600;
+    cursor: pointer;
     transition: background-color 0.5s ease-in-out;
 }
 #component_search > div > div > button:hover {
@@ -68,9 +69,16 @@
     border-style: solid;
     border-color: #0A1E33;
 }
+#search_field_input > input {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 600
+}
+#search_field_input > input::focus {
+    font-size: 30px;
+}
 #component_search > div > #search_field_input > input::placeholder {
     font-size: 16px;
-    padding-left: 20px;
     font-weight: 600;
     background-color: transparent;
 }

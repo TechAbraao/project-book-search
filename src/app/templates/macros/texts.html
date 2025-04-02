@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{# Dynamic Text #}
+{% macro dynamic_text(text = "None", size = '50') %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/texts.css') }}">
+<section class="dynamic_text">
+  <h1 style="font-size: {{ size }}px">{{ text }}</h1>
+</section>
+{% endmacro %}

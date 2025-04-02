@@ -10,19 +10,18 @@
     background-color: #E8E7D5;
     font-family: "Plus Jakarta Sans", serif;
 }
-#new_book_section > h1 {
+#new_book_section > div {
     width: 100%;
-    height: 5%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 45px;
-    color: #E6C32F;;
+    color: #0A1E33;;
     font-weight: 700;
-    padding-top: 20px;
 }
-#new_book_section > div {
-    height: 90%;
+#new_book_section > section {
+    height: 83%;
     width: 100%;
     display: flex;
     align-items: center;

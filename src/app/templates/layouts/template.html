@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{{url_for('static', filename='css/template.css')}}">
-<link rel="icon" href="{{ url_for('static', filename='icons/logo_minimalista.png') }}" type="image/x-icon">
-<!-- Metatag para atualizar o Browser a cada 1s -->
 <!-- <meta http-equiv="refresh" content="1"> -->
+<link rel="icon" href="{{ url_for('static', filename='icons/logo_minimalista.png') }}" type="image/x-icon">
+{% import "macros/texts.html" as texts %}
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
     <title>{{ titulo }}</title>
   </head>
   <body>
-     {% include "pages/nav/nav.html" %}
-     {% include "pages/main/main.html" %}
-     {% include "pages/search/search.html" %}
-     {% include "pages/books/books.html" %}
-     {% include "pages/footer/footer.html" %}
+     {% include "layouts/nav.html" %}
+     {% include "layouts/main.html" %}
+     {% include "layouts/search.html" %}
+     {% include "layouts/books.html" %}
+     {% include "layouts/footer.html" %}
   </body>
 </html>
 

@@ -11,15 +11,11 @@ def index():
     if request.method == "GET":
         try:
             data = get_books_by_genre(api_google_books, genre="Humor", num_books=6)
-            return render_template("pages/template/template.html", titulo="Book Search", data = data)
+            return render_template("layouts/template.html", titulo="Book Search", data=data )
 
         except TemplateNotFound:
             abort(404)
     if request.method == "POST":
-        book_name = request.get_json()
-        findBook = FindingBook(book_name)
-        # idFindBook = findBook.get("id")
-        # print(idFindBook)
-        # print(type(idFindBook))
-        # return redirect(url_for("new_book.index", id=idFindBook))
-        return render_template("pages/new_book/new_book.html", data=findBook)
+        query = request.get_json()
+        findBook = FindingBook(query)
+        return render_template("layouts/new_book.html", data=findBook)

@@ -1,6 +1,6 @@
 #macro_large_card {
     background-color: #FFFFFF;
-    width: 1000px;
+    width: 900px;
     height: 600px;
     display: flex;
     align-items: center;
@@ -12,14 +12,13 @@
 }
 #macro_large_card > img {
     background-color: #EFEFEF;
-    width: 500px;
+    width: 410px;
     height: 90%;
 }
 #macro_large_card > div {
     background-color: transparent;
     width: 450px;
     height: 90%;
-
 }
 #macro_large_card > div > h1 {
     font-size: 20px;

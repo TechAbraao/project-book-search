@@ -4,7 +4,7 @@ document.getElementById("input").addEventListener("keypress", function (event) {
 
         let valor = this.value;
 
-        fetch('{{ url_for("home.index") }}', {
+        fetch(homeIndex, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

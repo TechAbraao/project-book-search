@@ -17,6 +17,4 @@ def FindingBook(book_name):
     except Exception as e:
         return jsonify({"error": f"Erro ao buscar livro: {str(e)}"}), 500
 
-    print(book_result)
-
     return book_result
