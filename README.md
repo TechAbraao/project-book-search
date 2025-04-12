@@ -27,13 +27,13 @@
 ### 1️⃣ Clone this repository
 
 ```bash
-git clone https://github.com/TechAbraao/project-book-search.git
+git clone https://github.com/TechAbraao/book-search.git
 ```
 
 ### 2️⃣ Enter the project directory
 
 ```bash
-cd project-book-search
+cd book-search
 ```
 
 ### 3️⃣ Create or activate the Virtual Environment [OPTIONAL]
